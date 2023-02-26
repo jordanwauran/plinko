@@ -97,6 +97,13 @@ function setup() {
     button.style('font-weight: 600');
     button.style('font-family: proxima-nova, sans-serif');
     button.mousePressed(spawnParticles);
+
+    ghubButton = createImg('ghub.png');
+    ghubButton.position(10,5);
+    ghubButton.mousePressed(ghubLink);
+    ghubButton.style('height: 35px');
+    ghubButton.style('width: 35px');
+    ghubButton.style('cursor:pointer');
 }
 
 function spawnParticles () {
@@ -119,12 +126,7 @@ function ghubLink() {
 function draw() {
     background(26, 44, 56);
     Engine.update(engine);
-    ghubButton = createImg('ghub.png');
-    ghubButton.position(10,5);
-    ghubButton.mousePressed(ghubLink);
-    ghubButton.style('height: 35px');
-    ghubButton.style('width: 35px');
-    ghubButton.style('cursor:pointer');
+    
     textSize(20);
     strokeWeight(0);
     textStyle(BOLD);
