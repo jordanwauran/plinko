@@ -113,14 +113,14 @@ function randomNumber(min, max) {
 }
 
 function ghubLink() {
-    window.open('https://github.com');
+    window.open('https://github.com/jordanwauran/plinko');
 }
 
 function draw() {
     background(26, 44, 56);
     Engine.update(engine);
     ghubButton = createImg('ghub.png');
-    ghubButton.position(5,5);
+    ghubButton.position(10,5);
     ghubButton.mousePressed(ghubLink);
     ghubButton.style('height: 35px');
     ghubButton.style('width: 35px');
