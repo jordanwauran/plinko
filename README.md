@@ -1,6 +1,6 @@
 # Plinko
 
-A very simple Plinko game that closely resembles the one that is on Stake.com. 
+A very simple Plinko money game.
 
 The game was built using HTML, Javascript, Matter.js and P5.js.
 
